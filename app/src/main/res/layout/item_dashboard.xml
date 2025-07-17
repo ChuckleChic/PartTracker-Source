@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvShift"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Shift"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvPlan"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Plan"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvPartName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Part"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvOb"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="OB"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvDispatch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Dispatch"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvReceived"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Received"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvRemainingPs"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Remaining PS"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvRemainingVa"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Remaining VA"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvProduced"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Produced"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvRejection"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Rejection"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvCb"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="CB"
+            android:padding="4dp" />
+
+    </LinearLayout>
+</HorizontalScrollView>

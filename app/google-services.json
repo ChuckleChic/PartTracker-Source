@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "268879173275",
+    "project_id": "myapp-9b60f",
+    "storage_bucket": "myapp-9b60f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268879173275:android:970b06efc105337bac583e",
+        "android_client_info": {
+          "package_name": "PartTracker_App.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoTrsEtaR_9Xl3ziWhb_rzax2hw-brcxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268879173275:android:bdf413651f7ce421ac583e",
+        "android_client_info": {
+          "package_name": "com.example.parttracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoTrsEtaR_9Xl3ziWhb_rzax2hw-brcxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

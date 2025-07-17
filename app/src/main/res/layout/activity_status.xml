@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txtDispatched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dispatched from Paintshop: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock (CTL): 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtUsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Used in Assembly: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnAddUsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Used Part to Assembly"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:elevation="4dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sequence: 1"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model: 3501" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planned: 100" />
+
+        <TextView
+            android:id="@+id/tvHourly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hourly: 12" />
+
+        <TextView
+            android:id="@+id/tvCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress" />
+
+        <TextView
+            android:id="@+id/tvProduced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produced: 0"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

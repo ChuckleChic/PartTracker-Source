@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/border">
+
+    <!-- Expandable Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#F0F0F0"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tvSequenceHeader"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Sequence 1 - 75% Complete"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivExpandToggle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_expand_more" />
+    </LinearLayout>
+
+    <!-- Expanded content -->
+    <LinearLayout
+        android:id="@+id/expandableContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="4dp">
+
+        <!-- Top Summary -->
+        <TextView
+            android:id="@+id/tvMetaInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: --   Shift: --   Model: --   Color: --"
+            android:textStyle="italic"
+            android:textColor="#555555"
+            android:paddingBottom="8dp" />
+
+        <!-- Table Layout -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tableContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Table Header Row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#DDDDDD"
+                    android:padding="4dp">
+
+                    <TextView android:text="Part" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="Plan" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="OB" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="Dispatch" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="Received" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="PS Rem" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="VA Rem" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="Produced" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="Rejection" style="@style/DashboardHeaderCell" />
+                    <TextView android:text="CB" style="@style/DashboardHeaderCell" />
+                </LinearLayout>
+
+                <!-- Dynamic Rows inserted here -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

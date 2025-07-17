@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (yyyy-mm-dd)"
+        android:inputType="date" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etShift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shift"
+        android:inputType="text" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etSequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sequence"
+        android:inputType="number" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number" />
+
+
+</LinearLayout>

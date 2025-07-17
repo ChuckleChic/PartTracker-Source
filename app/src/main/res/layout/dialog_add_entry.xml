@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/etPartName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Part Name"
+            android:inputType="none"
+            android:dropDownHeight="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model" />
+
+        <EditText
+            android:id="@+id/etPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Plan"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opening Balance"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etProduced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Produced"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etRejection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rejection"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

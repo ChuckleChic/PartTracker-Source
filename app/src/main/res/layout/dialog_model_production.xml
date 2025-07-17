@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model" />
+
+    <Spinner
+        android:id="@+id/spinnerColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+
+
+    <EditText
+        android:id="@+id/etProduced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Produced"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etRejection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rejection"
+        android:inputType="number" />
+</LinearLayout>

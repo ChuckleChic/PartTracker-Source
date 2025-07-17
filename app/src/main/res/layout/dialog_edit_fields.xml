@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Opening Balance"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etProduced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Produced"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etRejection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rejection"
+        android:inputType="number" />
+</LinearLayout>

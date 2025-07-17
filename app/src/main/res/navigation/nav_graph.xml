@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.parttracker.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+
+
+    <!-- Main Menu Fragment -->
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.parttracker.ui.MainMenuFragment"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_main_menu">
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_generateQRFragment"
+            app:destination="@id/generateQRFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_locationSelectorFragment"
+            app:destination="@id/locationSelectorFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_scanHistoryFragment"
+            app:destination="@id/scanHistoryFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+
+
+
+    </fragment>
+
+    <!-- Status Fragment -->
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.parttracker.ui.StatusFragment"
+        android:label="Status"
+        tools:layout="@layout/fragment_status" />
+
+    <!-- Generate QR Fragment -->
+    <fragment
+        android:id="@+id/generateQRFragment"
+        android:name="com.example.parttracker.ui.GenerateQRFragment"
+        android:label="Generate QR"
+        tools:layout="@layout/fragment_generate_qr" />
+
+    <!-- Location Selector Fragment -->
+    <fragment
+        android:id="@+id/locationSelectorFragment"
+        android:name="com.example.parttracker.ui.LocationSelectorFragment"
+        android:label="Select Location"
+        tools:layout="@layout/fragment_location_selector">
+
+        <action
+            android:id="@+id/action_locationSelectorFragment_to_scanFragment"
+            app:destination="@id/scanFragment" />
+
+        <argument
+            android:name="location"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <!-- Scan Fragment -->
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.example.parttracker.ui.ScanFragment"
+        android:label="Scan"
+        tools:layout="@layout/fragment_scan">
+
+        <argument
+            android:name="location"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <!-- Scan History Fragment -->
+    <fragment
+        android:id="@+id/scanHistoryFragment"
+        android:name="com.example.parttracker.ui.ScanHistoryFragment"
+        android:label="Scan History"
+        tools:layout="@layout/fragment_scan_history" />
+
+    <!-- Plan Fragment -->
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.example.parttracker.ui.PlanFragment"
+        android:label="Plan"
+        tools:layout="@layout/fragment_plan">
+
+        <!-- Add this action to navigate to DashboardFragment -->
+        <action
+            android:id="@+id/action_planFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="string" />
+            <argument
+                android:name="selectedShift"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- Dashboard Fragment -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.parttracker.ui.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <argument
+            android:name="selectedDate"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="selectedShift"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.parttracker.ui.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.parttracker.ui.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+
+
+
+
+
+
+</navigation>
