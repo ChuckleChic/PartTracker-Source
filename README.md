@@ -20,7 +20,7 @@
 - **MVVM Architecture**
 
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 com.example.parttracker
@@ -32,7 +32,7 @@ com.example.parttracker
 ├── viewmodel/       # ViewModels
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone the repository:
    ```bash
